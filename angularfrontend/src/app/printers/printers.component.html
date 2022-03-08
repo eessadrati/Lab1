@@ -1,0 +1,10 @@
+<div style="display:inline-block;" *ngFor="let printer of printers">
+    <mat-card style="height:auto; width:300px; margin:15px;">
+        <mat-card-title>{{printer['name']}}</mat-card-title>
+        <mat-card-subtitle>{{printer['currentPrice']}} DH</mat-card-subtitle>
+        <img mat-card-image src="../../assets/unknown.jpg" alt="Photo" style="height:200px; width:200px;"  >
+       
+        <mat-card-content>description: {{printer['description']}}</mat-card-content>
+        
+    </mat-card>
+</div>

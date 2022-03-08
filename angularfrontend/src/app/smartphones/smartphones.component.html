@@ -1,0 +1,14 @@
+
+   <!-- <mat-list-item role="listitem" *ngFor="let smartphone of smartphones">
+        <h4 matLine>{{smartphone['name']}}</h4>
+        <p matLine class="demo-2"> {{smartphone['currentPrice']}} </p>
+        </mat-list-item>-->
+   
+<div style="display:inline-block;" *ngFor="let smartphone of smartphones">
+    <mat-card style="height:auto; width:300px; margin:15px;">
+        <mat-card-title>{{smartphone['name']}}</mat-card-title>
+        <mat-card-subtitle>{{smartphone['currentPrice']}} DH</mat-card-subtitle>
+        <img mat-card-image src="../../assets/unknown.jpg" alt="Photo" style="height:200px; width:200px;"  >
+        <mat-card-content>description: {{smartphone['description']}}</mat-card-content>
+    </mat-card>
+</div>
